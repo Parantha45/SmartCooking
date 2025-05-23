@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SmartCooking.Pages.ShowProcess"
+    Title="Show Process"
+    BackgroundColor="#FFC56E">
+
+    <Grid>
+        <!-- Centered stack of three dispensing progress bars -->
+        <StackLayout 
+        HorizontalOptions="Center" 
+        VerticalOptions="Center"
+        Spacing="20">
+            <Label 
+                Text="Click The Dispense Button When the 3 Green LED Bulbs are Turn ON..." 
+                HorizontalOptions="Center" 
+                FontSize="18" />
+
+            <Button 
+                 x:Name="DispenseButton" 
+                 Text="Dispense" 
+                 Clicked="OndispenseClicked" 
+                 BackgroundColor="DarkGreen" 
+                 TextColor="White"/>    
+
+            <!-- Spice Dispensing -->
+            <Label 
+          Text="Dispensing Spices" 
+          HorizontalOptions="Center" 
+          FontSize="18" />
+            <ProgressBar 
+          x:Name="spiceDispenseProgressBar" 
+          WidthRequest="300" 
+          Progress="0" 
+          HorizontalOptions="Center" />
+
+            <!-- Liquid Dispensing -->
+            <Label 
+          Text="Dispensing Liquids" 
+          HorizontalOptions="Center" 
+          FontSize="18" />
+            <ProgressBar 
+          x:Name="liquidDispenseProgressBar" 
+          WidthRequest="300" 
+          Progress="0" 
+          HorizontalOptions="Center" />
+
+        </StackLayout>
+
+        <!-- Cook Now Button in bottom-right -->
+        <StackLayout 
+        Orientation="Horizontal" 
+        HorizontalOptions="End" 
+        VerticalOptions="End" 
+        Padding="30">
+
+            <Button 
+          x:Name="CookButton" 
+          Text="Cook" 
+          Clicked="OnCookClicked" 
+          BackgroundColor="DarkRed" 
+          TextColor="White" 
+          IsEnabled="False" />
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
+

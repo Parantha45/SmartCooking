@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.Final"
+             Title="Final"
+             BackgroundColor="#FFC56E">
+    
+    <VerticalStackLayout
+        Spacing="50"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+        <Label 
+            Text="   Your Food is"
+            FontSize="50"
+            FontAttributes="Bold"
+            TextColor="#9B1B30"
+            HorizontalOptions="Center" 
+            HorizontalTextAlignment="Start"
+            LineBreakMode="WordWrap"         
+            VerticalTextAlignment="Center" />
+        <Label 
+            Text="    Ready !!!!!"
+            FontSize="50"
+            FontAttributes="Bold"
+            TextColor="#9B1B30"
+            HorizontalOptions="Center" 
+            HorizontalTextAlignment="Start"
+            LineBreakMode="WordWrap"         
+            VerticalTextAlignment="Center" />
+        <Button 
+            Text=">>>> Go Home >>>>"
+            FontSize="30"
+            HorizontalOptions="Center"
+            Clicked="OngoHomeClicked"
+            BackgroundColor="#FFC56E"
+            TextColor="LimeGreen"
+            CornerRadius="10"/>
+    </VerticalStackLayout>
+</ContentPage>

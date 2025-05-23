@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.ShowDetails"
+             Title="Recipe Details"
+             BackgroundColor="#FFC56E">
+
+    <ScrollView>
+        <!-- Use ScrollView to allow scrolling if content overflows -->
+
+        <StackLayout Padding="20">
+            <Label Text="Recipe Details per Person" FontSize="18" />
+            <!-- Recipe Name -->
+            <Label Text="Recipe Name:" FontSize="18" />
+            <Label x:Name="recipeNameLabel" FontSize="22" TextColor="Black"/>
+
+            <!-- Category -->
+            <Label Text="Food Category:" FontSize="18" />
+            <Label x:Name="categoryLabel" FontSize="22" TextColor="Black"/>
+
+            <!-- Spice 1 -->
+            <Label Text="Spice 1:" FontSize="18" />
+            <Label x:Name="spice1Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Spice 2 -->
+            <Label Text="Spice 2:" FontSize="18" />
+            <Label x:Name="spice2Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Spice 3 -->
+            <Label Text="Spice 3:" FontSize="18" />
+            <Label x:Name="spice3Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Ingredient 1 -->
+            <Label Text="Ingredient 1:" FontSize="18" />
+            <Label x:Name="ingredient1Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Ingredient 2 -->
+            <Label Text="Ingredient 2:" FontSize="18" />
+            <Label x:Name="ingredient2Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Ingredient 3 -->
+            <Label Text="Ingredient 3:" FontSize="18" />
+            <Label x:Name="ingredient3Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Ingredient 4 -->
+            <Label Text="Ingredient 4:" FontSize="18" />
+            <Label x:Name="ingredient4Label" FontSize="22" TextColor="Black"/>
+
+            <!-- Water Amount -->
+            <Label Text="Water Amount (ml):" FontSize="18" />
+            <Label x:Name="waterAmountLabel" FontSize="22" TextColor="Black"/>
+
+            <!-- Coconut Milk Amount -->
+            <Label Text="Coconut Milk Amount (ml):" FontSize="18" />
+            <Label x:Name="coconutMilkAmountLabel" FontSize="22" TextColor="Black"/>
+
+            <!-- Duration -->
+            <Label Text="Duration (Hours):" FontSize="18" />
+            <Label x:Name="durationHrsLabel" FontSize="22" TextColor="Black"/>
+
+            <Label Text="Duration (Minutes):" FontSize="18" />
+            <Label x:Name="durationMinsLabel" FontSize="22" TextColor="Black"/>
+        
+            <Button Text="Next" Clicked="OnnextClicked" BackgroundColor="DarkGreen" TextColor="White" />
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

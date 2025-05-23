@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.HomePage"
+             Title="HomePage"
+             BackgroundColor="#FFC56E">
+    <VerticalStackLayout Spacing="70" Padding="20" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <!-- Cook Now Button -->
+        <Button Text="Cook Now"
+                FontSize="40"
+                HorizontalOptions="Center"
+                BackgroundColor="Lavender"
+                TextColor="#333333"
+                Clicked="OnCookNowButtonClicked">
+
+        </Button>
+
+        <!-- Modify Recipe Details Button -->
+        <Button Text="Modify Recipe Details"
+                FontSize="40"
+                HorizontalOptions="Center"
+                BackgroundColor="Lavender"
+                TextColor="#333333"
+                Clicked="OnModifyRecipeButtonClicked">
+
+        </Button>
+
+        <!--Back Button -->
+        <Button Text="Back"
+                FontSize="40"
+                HorizontalOptions="Center"
+                BackgroundColor="Lavender"
+                TextColor="#333333"
+                Clicked="OnBackButtonClicked">  
+
+        </Button>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>

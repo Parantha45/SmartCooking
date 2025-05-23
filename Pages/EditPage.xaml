@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.EditPage"
+             Title="Edit Recipe"
+             BackgroundColor="#FFC56E">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+
+            <!-- Recipe Name -->
+            <Label Text="Recipe Name" FontSize="18" Padding="10"/>
+            <Entry x:Name="recipeNameEntry" FontSize="18" />
+
+            <!-- Food Category -->
+            <Label Text="Food Category" FontSize="18" Padding="10"/>
+            <Picker x:Name="categoryPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>Biriyani</x:String>
+                    <x:String>Noodles</x:String>
+                    <x:String>Fried Rice</x:String>
+                    <x:String>Spaghetti</x:String>
+                    <x:String>Kothu</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Spice 1 -->
+            <Label Text="Spice 1" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice1Picker" FontSize="18">
+                <Picker.Items>
+                    <x:String>Salt</x:String>
+                    <x:String>Chillies</x:String>
+                    <x:String>Pepper</x:String>
+                    <x:String>Mustard</x:String>
+                    <x:String>Cinnamon</x:String>
+                    <x:String>Cardamom</x:String>
+                    <x:String>Cumin</x:String>
+                    <x:String>Fennel</x:String>
+                    <x:String>Sweet Cumin</x:String>
+                    <x:String>Tamarind</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Spice 1 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice1QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>0.25</x:String>
+                    <x:String>0.5</x:String>
+                    <x:String>0.75</x:String>
+                    <x:String>1.0</x:String>
+                    <x:String>1.25</x:String>
+                    <x:String>1.5</x:String>
+                    <x:String>1.75</x:String>
+                    <x:String>2.0</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Spice 2 -->
+            <Label Text="Spice 2" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice2Picker" FontSize="18">
+                <Picker.Items>
+                    <x:String>Salt</x:String>
+                    <x:String>Chillies</x:String>
+                    <x:String>Pepper</x:String>
+                    <x:String>Mustard</x:String>
+                    <x:String>Cinnamon</x:String>
+                    <x:String>Cardamom</x:String>
+                    <x:String>Cumin</x:String>
+                    <x:String>Fennel</x:String>
+                    <x:String>Sweet Cumin</x:String>
+                    <x:String>Tamarind</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Spice 2 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice2QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>0.25</x:String>
+                    <x:String>0.5</x:String>
+                    <x:String>0.75</x:String>
+                    <x:String>1.0</x:String>
+                    <x:String>1.25</x:String>
+                    <x:String>1.5</x:String>
+                    <x:String>1.75</x:String>
+                    <x:String>2.0</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Spice 3 -->
+            <Label Text="Spice 3" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice3Picker" FontSize="18">
+                <Picker.Items>
+                    <x:String>Salt</x:String>
+                    <x:String>Chillies</x:String>
+                    <x:String>Pepper</x:String>
+                    <x:String>Mustard</x:String>
+                    <x:String>Cinnamon</x:String>
+                    <x:String>Cardamom</x:String>
+                    <x:String>Cumin</x:String>
+                    <x:String>Fennel</x:String>
+                    <x:String>Sweet Cumin</x:String>
+                    <x:String>Tamarind</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Spice 3 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="spice3QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>0.25</x:String>
+                    <x:String>0.5</x:String>
+                    <x:String>0.75</x:String>
+                    <x:String>1.0</x:String>
+                    <x:String>1.25</x:String>
+                    <x:String>1.5</x:String>
+                    <x:String>1.75</x:String>
+                    <x:String>2.0</x:String>
+                </Picker.Items>
+            </Picker>
+
+
+
+            <!-- Ingredient 1 -->
+            <Label Text="Ingredient 1" FontSize="18" Padding="10"/>
+            <Entry x:Name="ingredient1Entry" FontSize="18" />
+
+            <!-- Ingredient 1 Quantity -->
+            <Label Text="Ingredient 1 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="ingredient1QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>50</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                    <x:String>300</x:String>
+                    <x:String>350</x:String>
+                    <x:String>400</x:String>
+                    <x:String>450</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Ingredient 2 -->
+            <Label Text="Ingredient 2" FontSize="18" Padding="10"/>
+            <Entry x:Name="ingredient2Entry" FontSize="18" />
+
+            <!-- Ingredient 2 Quantity -->
+            <Label Text="Ingredient 2 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="ingredient2QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>50</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                    <x:String>300</x:String>
+                    <x:String>350</x:String>
+                    <x:String>400</x:String>
+                    <x:String>450</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Ingredient 3 -->
+            <Label Text="Ingredient 3" FontSize="18" Padding="10"/>
+            <Entry x:Name="ingredient3Entry" FontSize="18" />
+
+            <!-- Ingredient 3 Quantity -->
+            <Label Text="Ingredient 3 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="ingredient3QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>50</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                    <x:String>300</x:String>
+                    <x:String>350</x:String>
+                    <x:String>400</x:String>
+                    <x:String>450</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Ingredient 4 -->
+            <Label Text="Ingredient 4" FontSize="18" Padding="10"/>
+            <Entry x:Name="ingredient4Entry" FontSize="18" />
+
+            <!-- Ingredient 4 Quantity -->
+            <Label Text="Ingredient 4 Quantity" FontSize="18" Padding="10"/>
+            <Picker x:Name="ingredient4QuantityPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>50</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                    <x:String>300</x:String>
+                    <x:String>350</x:String>
+                    <x:String>400</x:String>
+                    <x:String>450</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Water Amount -->
+            <Label Text="Water Amount (ml)" FontSize="18" Padding="10"/>
+            <Picker x:Name="waterAmountPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>25</x:String>
+                    <x:String>50</x:String>
+                    <x:String>75</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Coconut Milk Amount -->
+            <Label Text="Coconut Milk Amount (ml)" FontSize="18" Padding="10"/>
+            <Picker x:Name="coconutMilkAmountPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>25</x:String>
+                    <x:String>50</x:String>
+                    <x:String>75</x:String>
+                    <x:String>100</x:String>
+                    <x:String>150</x:String>
+                    <x:String>200</x:String>
+                    <x:String>250</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Duration -->
+            <Label Text="Duration (Hours)" FontSize="18" Padding="10"/>
+            <Picker x:Name="durationHrsPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Duration (Minutes)" FontSize="18" Padding="10"/>
+            <Picker x:Name="durationMinsPicker" FontSize="18">
+                <Picker.Items>
+                    <x:String>5</x:String>
+                    <x:String>10</x:String>
+                    <x:String>15</x:String>
+                    <x:String>20</x:String>
+                    <x:String>25</x:String>
+                    <x:String>30</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Buttons: Delete, Reset, and Save -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,40" Spacing="50">
+                <Button Text="Delete" Clicked="OnDeleteButtonClicked" BackgroundColor="Red" TextColor="White"/>
+                <Button Text="Reset" Clicked="OnResetButtonClicked" BackgroundColor="DarkGreen" TextColor="White"/>
+                <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="DarkGreen" TextColor="White"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

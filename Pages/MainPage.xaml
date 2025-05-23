@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.MainPage"
+             Title="MainPage"
+             BackgroundColor="#FFC56E">
+    <VerticalStackLayout
+        Spacing="50"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+
+        <!-- Title Label -->
+        <Label
+            Text="   Smart Cooking Assistant System"
+            FontSize="50"
+            FontAttributes="Bold"
+            TextColor="Tomato"
+            HorizontalOptions="Center" 
+            HorizontalTextAlignment="Start"
+            LineBreakMode="WordWrap"         
+            VerticalTextAlignment="Center"/>
+
+        <!-- Home Button -->
+        <Button Text="🏠 Home"
+                FontSize="40"
+                HorizontalOptions="Center"
+                Clicked="OnHomeClicked"
+                BackgroundColor="#FFC56E"
+                TextColor="DarkGreen"
+                CornerRadius="10"/>
+
+        <!-- Settings Button -->
+        <Button Text="⚙️ Settings"
+                FontSize="40"
+                HorizontalOptions="Center"
+                Clicked="OnSettingsClicked"
+                BackgroundColor="#FFC56E"
+                TextColor="DarkGreen"
+                CornerRadius="10"/>
+
+        <!-- About Button -->
+        <Button Text="ℹ️ About"
+                FontSize="40"
+                HorizontalOptions="Center"
+                Clicked="OnAboutClicked"
+                BackgroundColor="#FFC56E"
+                TextColor="DarkGreen"
+                CornerRadius="10"/>
+
+    </VerticalStackLayout>
+</ContentPage>

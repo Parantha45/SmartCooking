@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.SearchPage"
+             Title="SearchPage"
+             BackgroundColor="#FFC56E">
+    <ScrollView>
+        <!-- Use ScrollView to make the page scrollable if content overflows -->
+
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Label (Title) -->
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center" >
+                <Label Text="Search Your Recipe" FontSize="32" HorizontalOptions="Center" Padding="10" TextColor="Tomato"/>
+            </HorizontalStackLayout>
+
+            <!-- Food Category Picker -->
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Label Text="Select Food Category" FontSize="18"/>
+                <Picker x:Name="categoryPicker" WidthRequest="150" SelectedIndex="-1">
+                    <Picker.Items>
+                        <x:String>Biriyani</x:String>
+                        <x:String>Noodles</x:String>
+                        <x:String>Fried Rice</x:String>
+                        <x:String>Spaghetti</x:String>
+                        <x:String>Kothu</x:String>
+                        <x:String>Other</x:String>
+                    </Picker.Items>
+                </Picker>
+            </HorizontalStackLayout>
+
+            <!-- Recipe Name Search Box -->
+            <Label Text="Search Recipe Name" FontSize="18" HorizontalOptions="Center" Padding="10"/>
+            <SearchBar x:Name="recipeSearchBar" Placeholder="Start typing recipe name..." 
+                       TextChanged="OnSearchTextChanged" />
+
+            <!-- Suggestions List -->
+            <ListView x:Name="recipeSuggestionsList" IsVisible="False" ItemSelected="OnRecipeSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding RecipeName}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- Select Recipe Button -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End" Padding="0,30">
+                <Button Text="Select Recipe" Clicked="OnselectrecipeClicked" BackgroundColor="DarkGreen" TextColor="White" Padding="10"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

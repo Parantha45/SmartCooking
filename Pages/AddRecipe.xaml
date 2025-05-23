@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.AddRecipe"
+             Title="AddRecipe"
+             BackgroundColor="#FFC56E">
+    <ScrollView>
+        <StackLayout Padding="10">
+            <!-- Recipe Name -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Recipe Name" Padding="12" FontSize="18"/>
+                <Entry x:Name="recipeNameEntry" Placeholder="Enter Recipe Name" WidthRequest="260" />
+            </StackLayout>
+
+            <!-- Food Category Picker -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Food Category" Padding="12" FontSize="18"/>
+                <Picker x:Name="categoryPicker" WidthRequest="250">
+                    <Picker.Items>
+                        <x:String>Biriyani</x:String>
+                        <x:String>Noodles</x:String>
+                        <x:String>Fried Rice</x:String>
+                        <x:String>Spaghetti</x:String>
+                        <x:String>Kothu</x:String>
+                        <x:String>Other</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Spice 1 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Spice 1" Padding="12" FontSize="18"/>
+                <Picker x:Name="spice1Picker" WidthRequest="264">
+                    <Picker.Items>
+                        <x:String>Salt</x:String>
+                        <x:String>Chillies</x:String>
+                        <x:String>Pepper</x:String>
+                        <x:String>Mustard</x:String>
+                        <x:String>Cinnamon</x:String>
+                        <x:String>Cardamom</x:String>
+                        <x:String>Cumin</x:String>
+                        <x:String>Fennel</x:String>
+                        <x:String>Sweet Cumin</x:String>
+                        <x:String>Tamarind</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="spice1QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>0.25</x:String>
+                        <x:String>0.5</x:String>
+                        <x:String>0.75</x:String>
+                        <x:String>1.0</x:String>
+                        <x:String>1.25</x:String>
+                        <x:String>1.5</x:String>
+                        <x:String>1.75</x:String>
+                        <x:String>2.0</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Spice 2 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Spice 2" Padding="12" FontSize="18"/>
+                <Picker x:Name="spice2Picker" WidthRequest="264">
+                    <Picker.Items>
+                        <x:String>Salt</x:String>
+                        <x:String>Chillies</x:String>
+                        <x:String>Pepper</x:String>
+                        <x:String>Mustard</x:String>
+                        <x:String>Cinnamon</x:String>
+                        <x:String>Cardamom</x:String>
+                        <x:String>Cumin</x:String>
+                        <x:String>Fennel</x:String>
+                        <x:String>Sweet Cumin</x:String>
+                        <x:String>Tamarind</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="spice2QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>0.25</x:String>
+                        <x:String>0.5</x:String>
+                        <x:String>0.75</x:String>
+                        <x:String>1.0</x:String>
+                        <x:String>1.25</x:String>
+                        <x:String>1.5</x:String>
+                        <x:String>1.75</x:String>
+                        <x:String>2.0</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Spice 3 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Spice 3" Padding="12" FontSize="18"/>
+                <Picker x:Name="spice3Picker" WidthRequest="264">
+                    <Picker.Items>
+                        <x:String>Salt</x:String>
+                        <x:String>Chillies</x:String>
+                        <x:String>Pepper</x:String>
+                        <x:String>Mustard</x:String>
+                        <x:String>Cinnamon</x:String>
+                        <x:String>Cardamom</x:String>
+                        <x:String>Cumin</x:String>
+                        <x:String>Fennel</x:String>
+                        <x:String>Sweet Cumin</x:String>
+                        <x:String>Tamarind</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="spice3QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>0.25</x:String>
+                        <x:String>0.5</x:String>
+                        <x:String>0.75</x:String>
+                        <x:String>1.0</x:String>
+                        <x:String>1.25</x:String>
+                        <x:String>1.5</x:String>
+                        <x:String>1.75</x:String>
+                        <x:String>2.0</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Ingredient 1, 2, 3, 4 -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredient 1" Padding="12" FontSize="18"/>
+                <Entry x:Name="ingredient1Entry" Placeholder="Ingredient 1" WidthRequest="222" />
+                <Picker x:Name="ingredient1QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>50</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                        <x:String>300</x:String>
+                        <x:String>350</x:String>
+                        <x:String>400</x:String>
+                        <x:String>450</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredient 2" Padding="12" FontSize="18"/>
+                <Entry x:Name="ingredient2Entry" Placeholder="Ingredient 2" WidthRequest="222" />
+                <Picker x:Name="ingredient2QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>50</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                        <x:String>300</x:String>
+                        <x:String>350</x:String>
+                        <x:String>400</x:String>
+                        <x:String>450</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredient 3" Padding="12" FontSize="18"/>
+                <Entry x:Name="ingredient3Entry" Placeholder="Ingredient 3" WidthRequest="222" />
+                <Picker x:Name="ingredient3QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>50</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                        <x:String>300</x:String>
+                        <x:String>350</x:String>
+                        <x:String>400</x:String>
+                        <x:String>450</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredient 4" Padding="12" FontSize="18"/>
+                <Entry x:Name="ingredient4Entry" Placeholder="Ingredient 4" WidthRequest="222" />
+                <Picker x:Name="ingredient4QuantityPicker" Title="Qty">
+                    <Picker.Items>
+                        <x:String>50</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                        <x:String>300</x:String>
+                        <x:String>350</x:String>
+                        <x:String>400</x:String>
+                        <x:String>450</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Water and Coconut Milk Pickers -->
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Water" Padding="12" FontSize="18"/>
+                <Picker x:Name="waterAmountPicker" Title="Qty" WidthRequest="313">
+                    <Picker.Items>
+                        <x:String>25</x:String>
+                        <x:String>50</x:String>
+                        <x:String>75</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Coconut Milk" Padding="12" FontSize="18"/>
+                <Picker x:Name="coconutMilkPicker" Title="Qty" WidthRequest="255">
+                    <Picker.Items>
+                        <x:String>25</x:String>
+                        <x:String>50</x:String>
+                        <x:String>75</x:String>
+                        <x:String>100</x:String>
+                        <x:String>150</x:String>
+                        <x:String>200</x:String>
+                        <x:String>250</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- Duration -->
+                <StackLayout Orientation="Horizontal">
+                <Label Text="Duration" Padding="12" FontSize="18"/>
+                <Picker x:Name="Hrs" Title="Hrs" WidthRequest="50">
+                    <Picker.Items>
+                        <x:String>0</x:String>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Hrs" Padding="12" FontSize="18"/>
+                <Picker x:Name="Mins" Title="Mins">
+                    <Picker.Items>
+                        <x:String>5</x:String>
+                        <x:String>10</x:String>
+                        <x:String>15</x:String>
+                        <x:String>20</x:String>
+                        <x:String>25</x:String>
+                        <x:String>30</x:String>
+                        <x:String>35</x:String>
+                        <x:String>40</x:String>
+                        <x:String>45</x:String>
+                        <x:String>50</x:String>
+                        <x:String>55</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Mins" Padding="12" FontSize="18"/>
+            </StackLayout>
+
+
+            <!-- Instructions Label -->
+            <Label Text="Quantity of Spices are in TeaSpoon measurements , Quantity of Ingredients in Grams and Quantity of Water,Coconut Oil in Millilitre " HorizontalOptions="Center" />
+
+            <!-- Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,40" Spacing="220">
+                <Button Text="Reset" Clicked="OnResetButtonClicked" BackgroundColor="DarkGreen" />
+                <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="DarkGreen" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

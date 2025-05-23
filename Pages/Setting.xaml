@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.Setting"
+             Title="Setting"
+             BackgroundColor="#FFC56E">
+    <VerticalStackLayout Padding="60">
+        <Button Text="Pair"
+                Clicked="OnPairButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="50"
+                BackgroundColor="DarkBlue"
+                TextColor="LimeGreen"
+                CornerRadius="10"/> 
+
+    </VerticalStackLayout>
+
+</ContentPage>

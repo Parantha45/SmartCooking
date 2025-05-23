@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartCooking.Pages.Cooking"
+             Title="Cooking"
+             BackgroundColor="#FFC56E">
+    <Grid>
+        <!-- Timer Display -->
+        <Frame CornerRadius="120" BackgroundColor="#FFD700" Padding="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <Label x:Name="timerLabel"
+                   Text="00:00:00"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black"/>
+        </Frame>
+
+        <!-- Buttons: Pause/Start and Stop -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20" Spacing="100" VerticalOptions="End">
+            <Button x:Name="pauseStartButton" Text="Pause" Clicked="OnPauseStartButtonClicked" BackgroundColor="DarkGreen" />
+            <Button Text="Stop" Clicked="OnStopButtonClicked" BackgroundColor="DarkRed" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
