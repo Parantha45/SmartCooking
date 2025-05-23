@@ -127,7 +127,7 @@ namespace SmartCooking.Pages
 #if ANDROID
             try
             {
-                string command = "P_"; // Signal to Arduino to stop cooking
+                string command = "S_"; // Signal to Arduino to stop cooking
                 BluetoothService.Instance.SendCommandToDevice(command);
             }
             catch (Exception ex)
